@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./sytles/index.css">
+  <script src="./index.js" defer></script>
+  <title>Bookmark landing page</title>
+
+</head>
+<body class="ps-md-5">
+  <!-- Header -->
+  <header class="container-fluid-md px-4 mt-5">
+    <div class="row">
+
+      <!-- Logo -->
+      <div class="col">
+        <img src="./images/logo-bookmark.svg" alt="logo" id="logo">
+      </div>
+
+      <!-- Nav Bar -->
+      <div class="col d-md-block d-none">
+        <ul class="d-flex list-unstyled justify-content-end align-items-center" id="nav-bar">
+          <li class="mx-4">FEATURES</a></li>
+          <li class="mx-4">PRICING</a></li>
+          <li class="mx-4">CONTACT</a></li>
+          <li class="mx-4"><button class="btn btn-danger px-4">LOGIN</button></a></li>
+        </ul>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="col d-md-none d-flex justify-content-end align-items-center">
+        <img src="./images/icon-hamburger.svg" alt="hamburger" id="hamburger">
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Intro Page -->
+  <div id="intro" class="container-fluid-md">
+    <div class="row flex-md-row-reverse flex-column">
+
+      <!-- Intro Image -->
+      <div class="col mt-5 d-flex justify-content-center position-relative">
+        <div class="blue-background"></div>
+        <img class="w-75" src="./images/illustration-hero.svg" alt="illustration-hero" id="intro-image">
+      </div>
+
+      <!-- Intro Text -->
+      <div class="col text-center mt-5 px-4" id="intro-text">
+        <h1 class="mb-4">
+          A Simple Bookmark Manager
+        </h1>
+        <p class="mb-4">
+          A clean and simple interface to organize your favourite websites. Open a new 
+  browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="buttons">
+          <button class="blue-bg-btn me-2 px-2 py-3">Get it on Chrome</button>
+          <button class="white-bg-btn px-2 py-3">Get it on Firefox</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Feature Page -->
+  <div id="features" class="container-fluid-md my-5 py-5 px-4 text-center">
+    
+    <!-- Feature Introduction -->
+    <div class="row">
+      <div id="feature-intro" class="col">
+        <h2 class="mb-3">Features</h2>
+        <p class="m-auto">
+        Our aim is to make it quick and easy for you to access your favourite websites. 
+        Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature Navvigation -->
+    <div class="row">
+      <div id="fearure-nav" class="col my-5">
+        <ul class="feature-list list-unstyled d-md-inline-flex">
+          <li data-tab-target="#feature1" class="feature active"><span>Simple Bookmarking</span></li>
+          <li data-tab-target="#feature2" class="feature px-5"><span>Speedy Searching</span></li>
+          <li data-tab-target="#feature3" class="feature"><span>Easy Sharing</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Feature Window -->
+    <div class="row">
+
+      <!-- Feature 1 -->
+      <div id="feature1" class="row active" data-tab-content>
+        <div class="col-md-6">
+          <div class="feature-image w-100 position-relative">
+            <div class="feature-bg"></div>
+            <img class="w-100 feature-img" src="./images/illustration-features-tab-1.svg" alt="feature1">
+          </div>
+        </div>
+        <div class="col-md-6 align-self-center feature-text">
+          <h3 class="mt-5">Bookmark in one click</h3>
+          <p>Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
+          <button class="blue-bg-btn px-2 py-2 d-none d-md-flex m-auto">More Info</button>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div id="feature2" class="row" data-tab-content>
+        <div class="col">
+          <div class="feature-image w-100 position-relative">
+            <div class="feature-bg "></div>
+            <img class="w-100 feature-img" src="./images/illustration-features-tab-2.svg" alt="feature1">
+          </div>
+        </div>
+        <div class="col align-self-center feature-text">
+          <h3 class="mt-5">Intelligent search</h3>
+          <p>Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
+          <button class="blue-bg-btn px-2 py-2 d-none d-md-block m-auto">More Info</button>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div id="feature3" class="row" data-tab-content>
+        <div class="col">
+          <div class="feature-image w-100 position-relative">
+            <div class="feature-bg w-100"></div>
+            <img class="w-100 feature-img" src="./images/illustration-features-tab-3.svg" alt="feature1">
+          </div>
+        </div>
+        <div class="col align-self-center feature-text">
+          <h3 class="mt-5">Share your bookmarks</h3>
+          <p>Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
+          <button class="blue-bg-btn px-2 py-2 d-none d-md-block m-auto">More Info</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Extension Page -->
+  <div id="extension" class="container-fluid-md px-4 mt-5 text-center">
+    
+    <!-- Extension Heading -->
+    <div class="row extension-heading mb-3">
+      <h2>Download the extension</h2>
+      <p class="m-auto">We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+    </div>
+
+    <!-- Extension Options -->
+    <div class="row extension-option px-5 mx-xl-5 d-md-flex">
+      <div class="col-md extension-box py-3 align-self-start">
+        <img class="my-3" src="./images/logo-chrome.svg" alt="Chrome">
+        <h3>Add to Chrome</h3>
+        <p>Minimum version 62</p>
+        <img class="w-100" src="./images/bg-dots.svg" alt="dot-bg">
+        <button class="blue-bg-btn py-2 px-4">Add & Install Extension</button>
+      </div>
+      <div class="col-md extension-box my-md-0 my-5 mx-md-5 py-3 align-self-center">
+        <img class="my-3" src="./images/logo-firefox.svg" alt="Firefox">
+        <h3>Add to Firefox</h3>
+        <p>Minimum version 55</p>
+        <img class="w-100" src="./images/bg-dots.svg" alt="dot-bg">
+        <button class="blue-bg-btn py-2 px-4">Add & Install Extension</button>
+      </div>
+      <div class="col-md extension-box py-3 align-self-end">
+        <img class="my-3" src="./images/logo-opera.svg" alt="Opera">
+        <h3>Add to Opera</h3>
+        <p>Minimum version 46</p>
+        <img class="w-100" src="./images/bg-dots.svg" alt="dot-bg">
+        <button class="blue-bg-btn py-2 px-4">Add & Install Extension</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Page -->
+  <div id="faq" class="container-fluid-md mx-4 mt-5">
+    <div id="faq-heading" class="row text-center mb-5">
+      <h3>Frequently Asked Questions</h3>
+      <p class="m-auto">Here are some of our FAQs. If you have any other questions you’d like 
+        answered please feel free to email us.</p>
+    </div>
+    <div id="faq-qna" class="row mt-5 ms-md-0 ms-4">
+      <div class="row">
+        <div class="ques-arrow row py-3 top-border">
+          <div class="ques col-10">
+            What is Bookmark?
+          </div>
+          <div class="arrow col-1 ml-auto">
+            <img src="./images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="ans row d-none">
+          <p class='my-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ques-arrow row py-3">
+          <div class="ques col-10">
+            How can I request a new browser?
+          </div>
+          <div class="arrow col-1 ml-auto">
+            <img src="./images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="ans row d-none">
+          <p class='my-3'>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ques-arrow row py-3">
+          <div class="ques col-10">
+            Is there a mobile app?
+          </div>
+          <div class="arrow col-1 ml-auto">
+            <img src="./images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="ans row d-none">
+          <p class='my-3'>Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+            sollicitudin ex et ultricies bibendum.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ques-arrow row py-3">
+          <div class="ques col-10">
+            What about other Chromium browsers?
+          </div>
+          <div class="arrow col-1 ml-auto">
+            <img src="./images/icon-arrow.svg" alt="arrow">
+          </div>
+        </div>
+        <div class="ans row d-none">
+          <p class='my-3'>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+            vitae neque eget nisl gravida pellentesque non ut velit.</p>
+        </div>
+      </div>
+    </div>
+    <button class="row m-auto mt-5 py-2 px-3 blue-bg-btn">More Info</button>
+  </div>
+
+  <!-- Footer Page -->
+  <footer>
+    <div id="footer1" class="container-fluid text-center mt-5">
+      <h5 class="my-3">35,000+ ALREADY JOINED</h5>
+      <h2 class="my-3">Stay up-to-date with what we’re doing</h2>
+      <div class="email">
+        <input class="px-2 py-2 pe-5" type="text">
+        <button class="btn btn-danger px-4">Contact Us</button>
+      </div>
+    </div>
+    <div id="footer2" class="container-fluid ">
+      <div class="row flex-md-row flex-column">
+        <ul class="col list-unstyled d-md-inline-flex text-center">
+          <li class="me-4 my-2"><img src="./images/logo-bookmark copy.svg" alt="bookmark-logo"></li>
+          <li class="me-4 my-2">FEATUERS</li>
+          <li class="me-4 my-2">PRICING</li>
+          <li class="me-4 my-2">CONTACT</li>
+        </ul>
+        <ul class="col list-unstyled d-inline-flex justify-content-center mt-5 mt-md-0">
+          <li class="me-4"><img src="./images/icon-facebook.svg" alt="facebook"></li>
+          <li><img src="./images/icon-twitter.svg" alt="twitter"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
