@@ -155,9 +155,14 @@ html {
   display: none;
 }
 
+footer{
+  //margin-right: 0;
+}
+
 #footer1{
   background-color: hsl(231, 69%, 60%);
   margin-left: -3rem;
+  margin-right: 0;
   padding-left: 0;
   width: 110%;
   color: #fff;
